@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import unittest
-from app.query_area import query_area
+from taiwan_area_map.query_area import query_area
 
 class TestTimeUtils(unittest.TestCase):
 
