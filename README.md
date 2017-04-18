@@ -4,7 +4,7 @@
 
 （從 open data 拿到的兩種區域是無法直接對應的，可以想見以後再增加其他政府機關也會有類似情形）
 
-目前有使用在 [line_bot](https://github.com/leafwind/line_bot) 專案，給天氣機器人使用
+目前有在 [line_bot](https://github.com/leafwind/line_bot) 專案被天氣機器人使用
 
 ### 定義
 
