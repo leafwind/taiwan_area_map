@@ -1,3 +1,5 @@
+# 台灣空品區-行政區查詢 [![Build Status](https://travis-ci.org/leafwind/taiwan_area_map.svg?branch=master)](https://travis-ci.org/leafwind/taiwan_area_map)
+
 ## 目的
 
 提供統一的 API 查詢「地名所屬的空品區與行政區」，以便相容於環保署與氣象局的 open data
