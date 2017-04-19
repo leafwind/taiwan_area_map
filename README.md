@@ -1,4 +1,4 @@
-# 台灣空品區-行政區查詢 [![Build Status](https://travis-ci.org/leafwind/taiwan_area_map.svg?branch=master)](https://travis-ci.org/leafwind/taiwan_area_map)
+# 台灣空品區-行政區查詢 [![Build Status](https://travis-ci.org/leafwind/taiwan_area_map.svg?branch=master)](https://travis-ci.org/leafwind/taiwan_area_map) [![Coverage Status](https://coveralls.io/repos/github/leafwind/taiwan_area_map/badge.svg?branch=master)](https://coveralls.io/github/leafwind/taiwan_area_map?branch=master)
 
 ## 目的
 
@@ -73,3 +73,8 @@ L2 會有完整行政區名字重複的情形，如台北市與台中市皆有�
 景點與縣市對照表：之後可提供查詢景點所對應的區域，作為景點天氣預報機器人之用（但山上等地區天氣還是需要從氣象局直接抓取）
 
 [景點地圖資訊](http://travel.network.com.tw/tourguide/twnmap/)
+
+
+## CI related
+
+This repo use [Travis CI](https://travis-ci.org/) and [coveralls-python](https://github.com/coveralls-clients/coveralls-python)
