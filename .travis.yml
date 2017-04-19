@@ -5,6 +5,9 @@ python:
 install:
   - pip install -r requirements.txt
   - pip install coveralls
-script: nosetests -v --with-coverage
+script:
+  - nosetests -v --with-coverage
+  - pyflakes query_area.py
+  - pylint -d all -e W0611,W0612,W0613,W0614 --reports=n --msg-template='{msg_id} {path}:{line} {msg} ({symbol})' query_area.py
 after_success:
   coveralls
