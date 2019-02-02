@@ -31,9 +31,9 @@ def query_area(s):
         for sub_division in admin_map[division]:
             sub_division = sub_division.decode('utf-8')
             if s == sub_division or s == sub_division[:-1]:
-                print 'use {} to query area'.format(division)
+                print('use {} to query area'.format(division))
                 area = query_area(division)[0][0]
-                print 'get {}'.format(area.encode('utf-8'))
+                print('get {}'.format(area.encode('utf-8')))
                 result.append({0: area, 1: division.decode('utf-8'), 2: sub_division})
                 break
                 
