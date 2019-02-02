@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-from taiwan_area_map import air_quality_area_map
-from taiwan_area_map import administrative_division_map as admin_map
+from .taiwan_area_map import air_quality_area_map
+from .taiwan_area_map import administrative_division_map as admin_map
 
 def query_area(s):
     if isinstance(s, str):
