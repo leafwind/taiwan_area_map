@@ -14,13 +14,14 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(query_area('嘉義'), [
             {0: u'雲嘉南', 1: u'嘉義縣'},
             {0: u'雲嘉南', 1: u'嘉義市'}])
-        self.assertEqual(query_area('大安區'), [
+        # a and b have the same elements in the same number, regardless of their order
+        self.assertCountEqual(query_area('大安區'), [
             {0: u'中部', 1: u'臺中市', 2: u'大安區'},
             {0: u'北部', 1: u'臺北市', 2: u'大安區'}])
-        self.assertEqual(query_area('大安'), [
+        self.assertCountEqual(query_area('大安'), [
             {0: u'中部', 1: u'臺中市', 2: u'大安區'},
             {0: u'北部', 1: u'臺北市', 2: u'大安區'}])
-        self.assertEqual(query_area('東區'), [
+        self.assertCountEqual(query_area('東區'), [
             {0: u'雲嘉南', 1: u'臺南市', 2: u'東區'},
             {0: u'中部', 1: u'臺中市', 2: u'東區'},
             {0: u'雲嘉南', 1: u'嘉義市', 2: u'東區'},

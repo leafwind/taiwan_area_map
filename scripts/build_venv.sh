@@ -1,10 +1,7 @@
 #!/bin/bash
 
-echo build python virtualenv on $1 from $2
-
-cd $1
-virtualenv __ --no-site-packages
-. __/bin/activate
+virtualenv venv --no-site-packages -p python3.7
+. venv/bin/activate
 pip install --upgrade pip
-pip install -r $2
+pip install -r requirements.txt
 deactivate
