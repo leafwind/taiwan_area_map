@@ -4,7 +4,7 @@ source __/bin/activate
 echo "# -------------------"
 echo "# running nosetests"
 echo "# -------------------"
-nosetests -v tests --with-coverage
+nosetests --with-coverage --cover-erase --cover-inclusive
 
 echo "# -------------------"
 echo "# pyflakes"
